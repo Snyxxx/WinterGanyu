@@ -15,7 +15,7 @@ public class stars extends GraphicalObject {
     public void draw(DrawTool drawTool) {
         for (int i = 1; i < 100; i++){
             drawTool.setCurrentColor(new Color(204, 255, 249));
-            drawTool.drawFilledCircle(Math.random()*600, Math.random()*440,Math.random()*5);
+            drawTool.drawFilledCircle(Math.random()*600, Math.random()*460,Math.random()*5);
         }
     }
 }
