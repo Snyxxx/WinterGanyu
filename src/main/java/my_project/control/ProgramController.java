@@ -42,11 +42,13 @@ public class ProgramController {
         Background background1 = new Background();
         viewController.draw(background1);
 
+        for(int i = 1; i <= 330; i++){
+            Snow snow1 = new Snow(0, 0);
+            viewController.draw(snow1);
+        }
+
         Floor floor1 = new Floor(0,475);
         viewController.draw(floor1);
-
-        stars stars1 = new stars();
-        viewController.draw(stars1);
 
         Cloud cloud1 = new Cloud(0,80);
         viewController.draw(cloud1);
