@@ -16,7 +16,7 @@ public class Floor extends GraphicalObject {
     }
 
     public void draw(DrawTool drawTool) {
-        drawTool.setCurrentColor(new Color(191,239,255));
-        drawTool.drawFilledRectangle(fx, fy, 600, 150);
+        drawTool.setCurrentColor(new Color(255,255,255));
+        drawTool.drawFilledRectangle(fx, fy, 600, 200);
     }
 }

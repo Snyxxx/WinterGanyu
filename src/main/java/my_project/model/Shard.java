@@ -26,7 +26,7 @@ public class Shard extends GraphicalObject {
     public void update(double dt){
         timer = timer +dt;
 
-        if (timer > 0.5){
+        if (timer > 0.7){
             double[] shard1 = new double[2];
             shard1[0] = Math.random()*572.5;
             shard1[1] = 40;
@@ -35,7 +35,7 @@ public class Shard extends GraphicalObject {
         }
         for (int i = 0; i < allShards.size(); i++){
             allShards.get(i)[1] += speed *dt;
-            if (allShards.get(i)[1] > 450){
+            if (allShards.get(i)[1] > 400){
                 allShards.remove(i);
             }
         }

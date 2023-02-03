@@ -47,13 +47,16 @@ public class ProgramController {
             viewController.draw(snow1);
         }
 
-        Floor floor1 = new Floor(0,475);
+        Floor floor1 = new Floor(0,435);
         viewController.draw(floor1);
+
+        Pointbar pointbar1 = new Pointbar();
+        viewController.draw(pointbar1);
 
         Cloud cloud1 = new Cloud(0,80);
         viewController.draw(cloud1);
 
-        Player player1 = new Player(150,200);
+        Player player1 = new Player(150,157);
         viewController.draw(player1);
 
         Ultball ultball1 = new Ultball(200,-10);
