@@ -53,6 +53,9 @@ public class ProgramController {
         Pointbar pointbar1 = new Pointbar();
         viewController.draw(pointbar1);
 
+        Score score1 = new Score(245,555);
+        viewController.draw(score1);
+
         Cloud cloud1 = new Cloud(0,80);
         viewController.draw(cloud1);
 

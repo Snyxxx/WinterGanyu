@@ -10,6 +10,6 @@ public class Pointbar extends GraphicalObject {
     }
 
     public void draw(DrawTool drawTool){
-        drawTool.drawTransformedImage(getMyImage(), 40, 320, 0, 0.2);
+        drawTool.drawTransformedImage(getMyImage(), 45, 320, 0, 0.2);
     }
 }
