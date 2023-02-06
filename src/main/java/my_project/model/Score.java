@@ -15,8 +15,11 @@ public class Score extends GraphicalObject {
     }
 
     public void draw(DrawTool drawTool){
-        score = 1;
         drawTool.drawText(scx,scy,"SCORE : ");
-        drawTool.drawText(scx+60,scy,"1");
+        drawTool.drawText(scx+60,scy, String.valueOf(score));
+    }
+
+    public void addScore(){
+        score++;
     }
 }

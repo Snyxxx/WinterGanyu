@@ -30,7 +30,7 @@ public class Player extends InteractiveGraphicalObject {
     @Override
     public void draw(DrawTool drawTool) {
         setNewImage(playerLook);
-        drawTool.drawTransformedImage(getMyImage(), px, py, 0, 0.3);
+        drawTool.drawTransformedImage(getMyImage(), px, py, 0, 1);
     }
 
 
@@ -44,11 +44,11 @@ public class Player extends InteractiveGraphicalObject {
             playerLook = "src/main/resources/graphic/Ganyu 2.png" ;
         }
 
-        if (px > 500){
-            px = -200;
+        if (px > 600){
+            px = -150;
         }
-        if (px < -202){
-            px = 498;
+        if (px < -152){
+            px = 598;
         }
     }
 }

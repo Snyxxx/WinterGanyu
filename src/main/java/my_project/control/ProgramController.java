@@ -59,13 +59,15 @@ public class ProgramController {
         Cloud cloud1 = new Cloud(0,80);
         viewController.draw(cloud1);
 
-        Player player1 = new Player(150,157);
+        Player player1 = new Player(220,260);
         viewController.draw(player1);
 
         Ultball ultball1 = new Ultball(200,-10);
         viewController.draw(ultball1);
 
         Shard shard1 = new Shard();
+        shard1.setPlayer(player1);
+        shard1.setScore(score1);
         viewController.draw(shard1);
     }
 
